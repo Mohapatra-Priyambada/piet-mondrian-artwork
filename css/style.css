@@ -1,10 +1,10 @@
 *{
     box-sizing: border-box;
-    margin: 0;
+    margin: auto;
     padding: 0;
 }
 body{
-    background-color: beige;
+    background-color: rgb(255, 255, 255);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
     margin:10px 20px;
@@ -13,21 +13,151 @@ body{
     }
     h2{
         font-size: 25px;
-        padding: 10px;
+        padding: 10px 0px;
+    }
+    a{
+        text-decoration: none;
     }
 }
 .header{
     text-align: center;
 }
 .about-painter{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
+    margin:40px auto;
     border: 1px solid black;
+    width: 70%;
     img{
-        float: right;
-        width: 10%;
+        width: 40%;
         padding:20px;
     }
     p{
         line-height: 25px;
     }
+}
+.about-content{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.intro-painting{
+    p{
+        text-align: center;
+        margin: auto 50px;
+    }
+}
+.box-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    gap:20px;
+    justify-content: center;
+    margin: 30px auto;
+}
+.box-1{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3); 
+    padding: 30px;
+    h3{
+        font-size: 25px;
+    }
+    p{
+        text-align: justify;
+        margin: 20px auto;
+        margin-top: auto;
+    }
+    ul{
+        list-style: none;
+        margin: 10px 0px;
+        line-height: 25px;
+    }
+    img{
+        width: 70%;
+        border: 2px solid black;
+    }
+    a {
+        text-decoration: none;  
+        color: inherit;         
+    }
+}
+.box-2{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    h3{
+        font-size: 25px;
+    }
+    p{
+        text-align: justify;
+        margin: 20px auto;
+        margin-top: auto;
+    }
+    ul{
+        list-style: none;
+        line-height: 25px;
+        text-align: left;
+        margin: 10px 0px;
+    }
+    img{
+        width: 40%;
+        border: 7px solid black;
+    }
+    a {
+        text-decoration: none;  
+        color: inherit;         
+    }
+}
+/* painting container */
+.painting1-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr 2fr 0.5fr;
+    grid-template-rows: 1fr 2fr 3fr 2fr;
+    border: 8px solid black;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(231, 236, 255);
+}
+.purple1{
+    background-color: rgb(193, 162, 221);
+}
+.purple2{
+    background-color: rgb(193, 162, 221);
+}
+.purple3{
+    background-color: rgb(193, 162, 221);
+}
+.purple4{
+    background-color: rgb(193, 162, 221);
+}
+.purple5{
+    background-color: rgb(193, 162, 221);
+}
+.red1{
+    background-color: rgb(255, 0, 0);
+}
+.red2{
+    background-color: rgb(255, 0, 0);
+}
+.yellow1{
+    background-color: rgb(255, 255, 0);
+}
+.yellow2{
+    background-color: rgb(255, 255, 0);
+}
+.yellow3{
+    background-color: rgb(255, 255, 0);
+}
+.darkblue1{
+    background-color: rgb(0, 0, 45);
+}
+.darkblue2{
+    background-color: rgb(0, 0, 45);
 }
